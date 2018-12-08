@@ -5,4 +5,5 @@
     :licence "ISC"
     :serial t
     :components ((:file "aoc")
-                 (:file "01")))
+                 (:file "01")
+                 (:file "02")))
