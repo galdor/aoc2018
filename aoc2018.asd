@@ -4,6 +4,7 @@
     :author "Nicolas Martyanoff <khaelin@gmail.com>"
     :licence "ISC"
     :depends-on ("cl-ppcre")
+    :pathname "src"
     :serial t
     :components ((:file "aoc")
                  (:file "01")
