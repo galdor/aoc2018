@@ -1,0 +1,11 @@
+
+# Advent of Code 2018
+
+This repository contains my solutions for the [Advent of Code
+2018](https://adventofcode.com/2018).
+
+They were developed in Common Lisp on [SBCL](http://sbcl.org) 1.4.11.
+
+Each daily puzzle has its own package and exports a `RUN` function that
+accepts the path of the input file and returns two values for the two levels
+of the puzzle.
