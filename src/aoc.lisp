@@ -1,10 +1,18 @@
 
 (defpackage :aoc2018
   (:use :cl)
-  (:export :do-file-lines
+  (:export :read-file
+           :do-file-lines
            :read-file-lines))
 
 (in-package :aoc2018)
+
+(defun read-file (path)
+  (with-open-file (file path :element-type 'character
+                             :external-format :utf-8)
+    (let ((data (make-array (file-length file) :element-type 'character)))
+      (read-sequence data file)
+      data)))
 
 (defmacro do-file-lines ((path line &optional result-var) &body body)
   (let ((stream (gensym "STREAM-")))
